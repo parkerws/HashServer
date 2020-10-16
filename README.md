@@ -1,15 +1,15 @@
-Simple Python Hashing Socket Server/Client
+# Simple Python Hashing Socket Server/Client
 
 
 
-##Introduction##
+# Introduction
 
 This program is written to establish a server with the purpose of creating a hash of all received files, and subsequently send that
 back to the client. 
 
 This program was written and tested using python 3.7 on Windows 10 WSL (Windows Subsystem for Linux) Ubuntu and Ubuntu 18.04 LTS.
 
-##Orientation##
+# Orientation
 
 Within the directory exists 3 folders --
 1. Client -- Client contains hashclient.py, used to send files to the server for hashing.
@@ -29,7 +29,7 @@ Within the directory exists 3 folders --
 		  retain the Windows-style return carriages and new lines (\r\n) that are absent in Linux (\n).
 
 
-##Instructions##
+# Instructions
 
 
 1. Start a server at the terminal (Server folder) by executing hashserver.py: "./hashserver.py"
@@ -46,7 +46,7 @@ Within the directory exists 3 folders --
 3. The client will connect with the server, send all files and return the hashes followed by the file name of all files. 
 
 
-##Troubleshooting##
+# Troubleshooting 
 
 1. Unable to execute file:
 	a. If you are unable to execute the file, change permissions of the file to "chmod u+x <filename>"
@@ -60,5 +60,5 @@ Within the directory exists 3 folders --
 	a. Occasionally, the server may not receive the files in the appropriate error during transmission. The easiest fix is to input CTRL^C to stop the server, and restart it. 
 
 
-##Optional Linux Packages##
+# Optional Linux Packages
 1. dos2unix (for troubleshooting, not required)
